@@ -1,0 +1,8 @@
+app:
+    hosts:
+        192.168.56.201:
+
+all:
+    vars:
+        ansible_user: vagrant
+        my_apps_group_name: app

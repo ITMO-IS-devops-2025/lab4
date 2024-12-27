@@ -1,0 +1,11 @@
+- name: Start Open-VPN app on app servers and get .ovpn file
+  hosts: app
+  become: true
+
+  vars:
+    openvpn_result_directory: ./
+
+  tasks:
+    - name: Include openvpn role
+      ansible.builtin.include_role:
+        name: openvpn
