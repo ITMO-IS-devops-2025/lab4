@@ -3,7 +3,7 @@
   become: true
 
   vars:
-    openvpn_result_directory: ./
+    openvpn_result_directory: .
 
   tasks:
     - name: Include openvpn role
